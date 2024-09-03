@@ -1,0 +1,38 @@
+a {
+  text-decoration: none;
+  color: var(--clr-txt);
+}
+.nav-wrapper {
+  padding: 3vh 3vw;
+  position: sticky; /* Makes the navbar sticky */
+  top: 0;
+  z-index: 5; /* Keep it above the SVG */
+  box-sizing: border-box;
+}
+.nav-el {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.links {
+  display: flex;
+  gap: 1rem;
+}
+.bg-img {
+  position: absolute; /* Change to absolute to position it relative to the parent container */
+  top: 0; /* Start from the top */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  z-index: 1; /* Ensure it's behind the navbar */
+  overflow: hidden; /* Prevent overflow */
+}
