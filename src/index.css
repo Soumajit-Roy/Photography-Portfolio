@@ -1,1 +1,20 @@
+:root {
+    --clr-bg:#F5F5DC;
+    --clr-fg: #6B8E23;
+    --clr-highlight: #FFD700;
+    --clr-text: #4E342E;
+}
+
+h1,h2,h3 {
+    font-family: "Sorts Mill Goudy", serif;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+}
+.cta-font {
+    font-family: "Lora", serif;
+}
+.meta-font {
+    font-family: "Alex Brush", cursive;
+}
 
