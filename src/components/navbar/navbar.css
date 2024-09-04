@@ -14,7 +14,7 @@ a {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  padding: 1rem 1.5rem;
+  padding: 2vh 1.5vw;
   width: 100%;
   box-sizing: border-box;
   background: rgba(255, 255, 255, 0.25);
@@ -35,4 +35,13 @@ a {
   width: 100%; /* Full width */
   z-index: 1; /* Ensure it's behind the navbar */
   overflow: hidden; /* Prevent overflow */
+}
+
+@media (max-width: 480px){
+  .nav-wrapper {
+    padding: 2vh 3vw;
+  }
+  .nav-el {
+    padding: 1vh 3vw;
+  }
 }

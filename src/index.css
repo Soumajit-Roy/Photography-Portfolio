@@ -7,6 +7,7 @@
 
 h1,h2,h3 {
     font-family: "Sorts Mill Goudy", serif;
+    font-weight: bold;
 }
 body {
     font-family: "Open Sans", sans-serif;
