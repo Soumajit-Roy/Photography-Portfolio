@@ -15,15 +15,44 @@ export default function Navbar() {
       </div>
       <div className="nav-wrapper">
         <div className="nav-el">
-          <h2>
-            <a href="#">Home</a>
-          </h2>
-          <div className="links">
+        <h3 className="home-link">
+              <a href="#">
+                Home
+              </a>
+            </h3>
+          <input type="checkbox" id="sidebar-active" />
+          <label for="sidebar-active" class="open-sidebar-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="30px"
+              viewBox="0 -960 960 960"
+              width="30px"
+              fill="#4E342E"
+            >
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+          </label>
+          <label id="overlay" for="sidebar-active"></label>
+          <div className="links-container">
+            <label for="sidebar-active" class="close-sidebar-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="30px"
+                viewBox="0 -960 960 960"
+                width="30px"
+                fill="#4E342E"
+              >
+                <path d="M120-240v-80h520v80H120Zm664-40L584-480l200-200 56 56-144 144 144 144-56 56ZM120-440v-80h400v80H120Zm0-200v-80h520v80H120Z" />
+              </svg>
+            </label>
             <h3>
-              <a href="#">About</a>
+              <a className="h3-links" href="#">Packages</a>
             </h3>
             <h3>
-              <a href="#">Contact Us</a>
+              <a className="h3-links" href="#">About</a>
+            </h3>
+            <h3>
+              <a className="h3-links" href="#">Contact Us</a>
             </h3>
           </div>
         </div>
