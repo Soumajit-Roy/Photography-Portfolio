@@ -9,3 +9,19 @@ html{
 body{
   background-color: var(--clr-bg);
 }
+
+.headings{
+  display: flex;
+  flex-direction: row;
+}
+
+.headings::after{
+  display: block;
+  position: relative;
+  content: "";
+  height: 1px;
+  background-color: black;
+  width: 300px;
+  top: 20px;
+  margin-left: 2vw;
+}

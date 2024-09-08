@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
 a {
   text-decoration: none;
   color: var(--clr-text);
@@ -51,7 +54,9 @@ a:hover{
 .open-sidebar-button, .close-sidebar-button{
   display: none;
 }
-
+label{
+  cursor: pointer;
+}
 @media (max-width: 480px){
   .nav-wrapper {
     padding: 2vh 3vw;
@@ -77,7 +82,7 @@ a:hover{
     -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    transition: 0.75s ease-out;
+    transition: 0.5s ease-out;
 
     border-radius: 0 10px 10px;
   }
