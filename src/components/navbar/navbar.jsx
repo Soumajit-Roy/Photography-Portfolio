@@ -1,7 +1,15 @@
 import React from "react";
+import { useState } from "react";
 import "./navbar.css";
+import MenuIcon from '@mui/icons-material/Menu';
+import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 
 export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
     <>
       <div className="bg-img">
@@ -20,31 +28,11 @@ export default function Navbar() {
                 Home
               </a>
             </h3>
-          <input type="checkbox" id="sidebar-active" />
-          <label for="sidebar-active" class="open-sidebar-button">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="30px"
-              viewBox="0 -960 960 960"
-              width="30px"
-              fill="#4E342E"
-            >
-              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-            </svg>
-          </label>
-          <label id="overlay" for="sidebar-active"></label>
-          <div className="links-container">
-            <label for="sidebar-active" class="close-sidebar-button">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="30px"
-                viewBox="0 -960 960 960"
-                width="30px"
-                fill="#4E342E"
-              >
-                <path d="M120-240v-80h520v80H120Zm664-40L584-480l200-200 56 56-144 144 144 144-56 56ZM120-440v-80h400v80H120Zm0-200v-80h520v80H120Z" />
-              </svg>
-            </label>
+
+            <button className="hamburger" onClick={toggleMenu}>
+            {isMenuOpen ? <MenuOpenIcon /> : <MenuIcon />}
+            </button>
+          <div className={`links-container ${isMenuOpen ? 'active scale-in-ver-top' : ''}`}>
             <h3>
               <a className="h3-links" href="#">Packages</a>
             </h3>
