@@ -13,6 +13,8 @@ body{
 .headings{
   display: flex;
   flex-direction: row;
+  padding: 0 3vw;
+  margin-bottom: 10px;
 }
 
 .headings::after{
@@ -21,7 +23,13 @@ body{
   content: "";
   height: 1px;
   background-color: black;
-  width: 300px;
+  width: 500px;
   top: 20px;
   margin-left: 2vw;
+}
+
+@media (max-width: 480px){
+  .headings::after{
+    max-width: 250px;
+  }
 }

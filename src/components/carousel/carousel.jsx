@@ -40,31 +40,31 @@ export default function Carousel() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          <img src="https://cdn.pixabay.com/photo/2023/12/22/01/37/woman-8463055_1280.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          <img src="https://cdn.pixabay.com/photo/2022/10/17/15/02/photography-7527978_1280.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          <img src="https://plus.unsplash.com/premium_photo-1683290222216-a9fab340cbf8" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+          <img src="https://images.unsplash.com/photo-1716453166729-05df6105f381" />
         </SwiperSlide>
         <SwiperSlide>
           <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+          <img src="https://images.unsplash.com/photo-1629888401525-0d11ff26881f" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+          <img src="https://plus.unsplash.com/premium_photo-1664303775888-6bc50a8d13a6" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+          <img src="https://images.unsplash.com/photo-1513720002990-9ee5af030f64" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+          <img src="https://cdn.pixabay.com/photo/2023/11/05/13/19/christmas-8367102_1280.jpg" />
         </SwiperSlide>
       </Swiper>
     </>
