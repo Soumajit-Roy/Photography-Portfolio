@@ -7,9 +7,27 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import CollectionsIcon from '@mui/icons-material/Collections';
 import WorkIcon from '@mui/icons-material/Work';
+import {createTheme, ThemeProvider} from '@mui/material';
+
 
 import './cards.css'
+import Data from '../../Data.json'
 
+const theme = createTheme({
+  typography: {
+    h5: {
+      fontWeight: 'bold',
+      fontFamily: '"Sorts Mill Goudy", serif',
+    },
+    body2: {
+      fontFamily: '"Open Sans", sans-serif',
+      fontWeight: 'bold'
+    },
+    button: {
+      fontFamily: '"Lora", serif'
+    }
+  },
+});
 
 
 export default function ImgMediaCard() {
@@ -19,116 +37,44 @@ export default function ImgMediaCard() {
     <h2>Works</h2>
     </div>
     <div className='cards-pack'>
-    <Card sx={{ 
-      maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        alt="Wedding Photography"
-        height="300"
-        image="https://images.unsplash.com/photo-1725554643280-12c743372ba4"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lorem
-        </Typography>
-        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small" variant="contained" startIcon={<CollectionsIcon />}>View Photos</Button>
-        <Button size="small" variant="contained" startIcon={<WorkIcon />}>Packages</Button>
-      </CardActions>
-    </Card>
 
-    <Card sx={{ maxWidth: 345 }}>
+    <ThemeProvider theme={theme}>
+    {Data.map((item)=>(
+    <Card key={item.id} 
+    sx={{ 
+      maxWidth: 345 ,
+      bgcolor: '#E5D6C2'
+      }}>
       <CardMedia
         component="img"
-        alt="Wedding Photography"
+        alt={item.heading}
         height="300"
-        image="https://images.unsplash.com/photo-1658688976224-5d5c04d1423c"
+        image={item.image_path}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lorem
+          {item.heading}
         </Typography>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+          {item.description}
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small" variant="contained" startIcon={<CollectionsIcon />}>View Photos</Button>
-        <Button size="small" variant="contained" startIcon={<WorkIcon />}>Packages</Button>
+      <CardActions style={{ justifyContent: 'space-around' }}>
+          <Button
+          sx={{
+            color: 'black',
+            backgroundColor: '#FFD700'
+          }} size="small" variant="contained" startIcon={<CollectionsIcon />}>View Photos</Button>
+          <Button
+          sx={{
+            color: 'black',
+            backgroundColor: '#FFD700'
+          }} size="small" variant="contained" startIcon={<WorkIcon />}>Packages</Button>
       </CardActions>
     </Card>
+    ))}
+    </ThemeProvider>
 
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        alt="Wedding Photography"
-        height="300"
-        image="https://plus.unsplash.com/premium_photo-1683817397904-d4465651a071"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lorem
-        </Typography>
-        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small" variant="contained" startIcon={<CollectionsIcon />}>View Photos</Button>
-        <Button size="small" variant="contained" startIcon={<WorkIcon />}>Packages</Button>
-      </CardActions>
-    </Card>
-
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        alt="Wedding Photography"
-        height="300"
-        image="https://plus.unsplash.com/premium_photo-1661868941940-167ef5be4885"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lorem
-        </Typography>
-        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small" variant="contained" startIcon={<CollectionsIcon />}>View Photos</Button>
-        <Button size="small" variant="contained" startIcon={<WorkIcon />}>Packages</Button>
-      </CardActions>
-    </Card>
-
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        alt="Wedding Photography"
-        height="300"
-        image="https://images.unsplash.com/photo-1515626553181-0f218cb03f14"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lorem
-        </Typography>
-        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small" variant="contained" startIcon={<CollectionsIcon />}>View Photos</Button>
-        <Button size="small" variant="contained" startIcon={<WorkIcon />}>Packages</Button>
-      </CardActions>
-    </Card>
     </div>
     </>
   );

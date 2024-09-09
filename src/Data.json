@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "heading": "Wedding Photography",
+        "description": "Capturing the special moments and emotions of your wedding day, from vows to celebrations.",
+        "image_path": "https://images.unsplash.com/photo-1725554643280-12c743372ba4"
+    },
+    {
+        "id": 2,
+        "heading": "Pre-Wedding Shoot",
+        "description": "A romantic photoshoot capturing the chemistry and love between the couple before the big day.",
+        "image_path": "https://images.unsplash.com/photo-1658688976224-5d5c04d1423c"
+    },
+    {
+        "id": 3,
+        "heading": "First Rice Ceremony",
+        "description": "Documenting the traditional ceremony where a child is introduced to solid food for the first time.",
+        "image_path": "https://plus.unsplash.com/premium_photo-1683817397904-d4465651a071"
+    },
+    {
+        "id": 4,
+        "heading": "Maternity Shoot",
+        "description": "Celebrating the journey of motherhood with elegant and heartfelt maternity portraits.",
+        "image_path": "https://plus.unsplash.com/premium_photo-1661868941940-167ef5be4885"
+    },
+    {
+        "id": 5,
+        "heading": "Baby Shower",
+        "description": "Capturing the joy and excitement of an expecting family during the baby shower celebration.",
+        "image_path": "https://images.unsplash.com/photo-1515626553181-0f218cb03f14"
+    },
+    {
+        "id": 6,
+        "heading": "Model Shoot",
+        "description": "A professional photoshoot showcasing a model's style, personality, and unique look.",
+        "image_path": "https://images.unsplash.com/photo-1725628426929-ce12123c03db"
+    }
+]
