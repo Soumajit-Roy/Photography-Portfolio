@@ -40,31 +40,31 @@ export default function Carousel() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="https://cdn.pixabay.com/photo/2023/12/22/01/37/woman-8463055_1280.jpg" />
+          <img src="cara-imgs/s1.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://cdn.pixabay.com/photo/2022/10/17/15/02/photography-7527978_1280.jpg" />
+          <img src="cara-imgs/s2.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://plus.unsplash.com/premium_photo-1683290222216-a9fab340cbf8" />
+          <img src="cara-imgs/s3.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://images.unsplash.com/photo-1716453166729-05df6105f381" />
+          <img src="cara-imgs/s4.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+          <img src="cara-imgs/s5.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://images.unsplash.com/photo-1629888401525-0d11ff26881f" />
+          <img src="cara-imgs/s6.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://plus.unsplash.com/premium_photo-1664303775888-6bc50a8d13a6" />
+          <img src="cara-imgs/s7.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://images.unsplash.com/photo-1513720002990-9ee5af030f64" />
+          <img src="cara-imgs/s8.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://cdn.pixabay.com/photo/2023/11/05/13/19/christmas-8367102_1280.jpg" />
+          <img src="cara-imgs/s9.jpg" />
         </SwiperSlide>
       </Swiper>
     </>
