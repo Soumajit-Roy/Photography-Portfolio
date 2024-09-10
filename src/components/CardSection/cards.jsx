@@ -55,7 +55,7 @@ export default function ImgMediaCard() {
         <Typography gutterBottom variant="h5" component="div">
           {item.heading}
         </Typography>
-        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+        <Typography variant="body2" sx={{ color: 'text.secondary'}}>
           {item.description}
         </Typography>
       </CardContent>

@@ -34,6 +34,9 @@ export default function Navbar() {
             </button>
           <div className={`links-container ${isMenuOpen ? 'active scale-in-ver-top' : ''}`}>
             <h3>
+              <a className="h3-links" href="#">Works</a>
+            </h3>
+            <h3>
               <a className="h3-links" href="#">Packages</a>
             </h3>
             <h3>
