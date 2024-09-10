@@ -40,31 +40,31 @@ export default function Carousel() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="cara-imgs/s1.jpg" />
+          <img src="cara-imgs/s1.webp" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="cara-imgs/s2.jpg" />
+          <img src="cara-imgs/s2.webp" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="cara-imgs/s3.jpg" />
+          <img src="cara-imgs/s3.webp" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="cara-imgs/s4.jpg" />
+          <img src="cara-imgs/s4.webp" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="cara-imgs/s5.jpg" />
+          <img src="cara-imgs/s5.webp" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="cara-imgs/s6.jpg" />
+          <img src="cara-imgs/s6.webp" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="cara-imgs/s7.jpg" />
+          <img src="cara-imgs/s7.webp" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="cara-imgs/s8.jpg" />
+          <img src="cara-imgs/s8.webp" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="cara-imgs/s9.jpg" />
+          <img src="cara-imgs/s9.webp" />
         </SwiperSlide>
       </Swiper>
     </>
