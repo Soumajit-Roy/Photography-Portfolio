@@ -14,7 +14,7 @@ import {createTheme, ThemeProvider} from '@mui/material';
 import CallIcon from '@mui/icons-material/Call';
 import CollectionsIcon from '@mui/icons-material/Collections';
 import { Link,useNavigate, useLocation } from "react-router-dom";
-import Contact from '../contact/contactus';
+
 
 const theme = createTheme({
   typography: {
@@ -98,7 +98,7 @@ const Packages = () => {
           sx={{
             color: 'black',
             backgroundColor: '#FFD700'
-          }} size="small" variant="contained" startIcon={<CollectionsIcon />}>View Photos</Button>
+          }} size="small" variant="contained" href='/wedding-photos' startIcon={<CollectionsIcon />}>View Photos</Button>
           <Button
           sx={{
             color: 'black',

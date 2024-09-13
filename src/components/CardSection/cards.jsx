@@ -65,7 +65,7 @@ export default function ImgMediaCard() {
           sx={{
             color: 'black',
             backgroundColor: '#FFD700'
-          }} size="small" variant="contained" startIcon={<CollectionsIcon />}>View Photos</Button>
+          }} size="small" variant="contained" href='/wedding-photos' startIcon={<CollectionsIcon />}>View Photos</Button>
           <Button
           sx={{
             color: 'black',
