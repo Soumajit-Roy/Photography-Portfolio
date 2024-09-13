@@ -5,10 +5,10 @@ import "./about.css";
 const About = () => {
   return (
     <>
-      <div className="headings">
+      <div className="headings" id="about-tag">
         <h2>About Us</h2>
       </div>
-      <div className="about-wrapper">
+      <div className="about-wrapper" >
         <div className="avatar-img">
           <img src="https://placehold.co/500x500"></img>
         </div>

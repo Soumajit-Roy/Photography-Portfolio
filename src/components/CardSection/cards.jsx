@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import CollectionsIcon from '@mui/icons-material/Collections';
 import WorkIcon from '@mui/icons-material/Work';
 import {createTheme, ThemeProvider} from '@mui/material';
+import { Link } from 'react-router-dom';
 
 
 import './cards.css'
@@ -34,7 +35,7 @@ export default function ImgMediaCard() {
   return (
     <>
     <div className='headings'>
-    <h2>Works</h2>
+    <h2 id='works-tag'>Works</h2>
     </div>
     <div className='cards-pack'>
 
@@ -69,7 +70,7 @@ export default function ImgMediaCard() {
           sx={{
             color: 'black',
             backgroundColor: '#FFD700'
-          }} size="small" variant="contained" startIcon={<WorkIcon />}>Packages</Button>
+          }} size="small" variant="contained" href='/packages' startIcon={<WorkIcon />}>Packages</Button>
       </CardActions>
     </Card>
     ))}

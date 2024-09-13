@@ -14,13 +14,8 @@
     margin: 40px auto;
 }
 
-.contact-card > img {
-    width: 10vw;
-    height: 10vw;
-}
-
 @media (max-width:768px){
-  .contact-card > img {
+  .hvr-pulse-grow {
     width: 15vw;
     height: 15vw;
 }
@@ -43,6 +38,8 @@
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    width: 10vw;
+    height: 10vw;
   }
   .hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {
     -webkit-animation-name: hvr-pulse-grow;

@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./navbar.css";
 import MenuIcon from '@mui/icons-material/Menu';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
-import { Link } from "react-router-dom";
+import { Link,useNavigate, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,6 +11,23 @@ export default function Navbar() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleScrollToSection = (sectionId) => {
+    if (location.pathname !== '/') {
+      navigate('/'); // Navigate to the homepage
+    }
+    setTimeout(() => {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100); // Delay to allow DOM to re-render after navigation
+  };
+
+
   return (
     <>
       <div className="bg-img">
@@ -35,16 +52,16 @@ export default function Navbar() {
             </button>
           <div className={`links-container ${isMenuOpen ? 'active scale-in-ver-top' : ''}`}>
             <h3>
-              <a className="h3-links" href="#">Works</a>
+              <a className="h3-links" onClick={() => handleScrollToSection('works-tag')}>Works</a>
             </h3>
             <h3>
               <Link className="h3-links" to="/packages">Packages</Link>
             </h3>
             <h3>
-              <a className="h3-links" href="#">About</a>
+              <a className="h3-links" onClick={() => handleScrollToSection('about-tag')}>About</a>
             </h3>
             <h3>
-              <a className="h3-links" href="#">Contact Us</a>
+              <a className="h3-links" onClick={() => handleScrollToSection('contact-tag')}>Contact Us</a>
             </h3>
           </div>
         </div>

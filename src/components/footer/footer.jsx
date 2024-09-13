@@ -7,7 +7,7 @@ function Footer() {
       <p style={styles.text}>
         Site made by{' '}
         <a
-          href="itssoumajit.netlify.app" // Replace with the actual link
+          href="https://itssoumajit.netlify.app/" // Replace with the actual link
           target="_blank"
           rel="noopener noreferrer"
           style={styles.link}

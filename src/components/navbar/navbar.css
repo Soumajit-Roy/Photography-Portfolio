@@ -5,6 +5,9 @@ a {
 a:hover{
   color: white;
 }
+.h3-links{
+  cursor: pointer;
+}
 .nav-wrapper {
   padding: 3vh 3vw;
   position: sticky; /* Makes the navbar sticky */
