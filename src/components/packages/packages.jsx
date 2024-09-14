@@ -8,7 +8,7 @@ import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import packagesData from '../../package-data';
+import packagesData from "../../package-data"
 import './packages.css'
 import {createTheme, ThemeProvider} from '@mui/material';
 import CallIcon from '@mui/icons-material/Call';
