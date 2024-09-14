@@ -4,7 +4,7 @@ import Carousel from './components/carousel/carousel'
 import About from './components/about/about'
 import Contact from './components/contact/contactus'
 import Footer from './components/footer/footer'
-import Cards from './components/cardsection/cards'
+import Cards from '../components/cardsection/cards'
 
 
 export default function App(){
