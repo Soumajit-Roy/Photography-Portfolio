@@ -5,8 +5,6 @@
 .gallery {
     max-width: 900px;
     margin: 5% auto;
-    border: 10px groove #885df1;
-    border-radius: 20px;
   }
   .gallery__item img {
     width: 100%;
