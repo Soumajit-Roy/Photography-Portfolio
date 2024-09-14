@@ -31,7 +31,7 @@ const theme = createTheme({
 });
 
 
-export default function ImgMediaCard() {
+export default function Cards() {
   return (
     <>
     <div className='headings'>
