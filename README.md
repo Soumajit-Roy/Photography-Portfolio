@@ -118,7 +118,7 @@ This portfolio has been optimized for performance and responsiveness using **Goo
 <a href="https://ibb.co/zb7YNLy"><img src="https://i.ibb.co/S0d8J1h/m-page.webp" alt="m-page" border="0"></a>
 <a href="https://ibb.co/BK8PYWW"><img src="https://i.ibb.co/YTvWVnn/p-page.webp" alt="p-page" border="0"></a>
 
-<video src="https://i.imgur.com/BE9cTI2.mp4" controls></video>
+<img src="https://i.imgur.com/FRvET8T.gif"/>
 
 🤝 Contributing
 ---------------
